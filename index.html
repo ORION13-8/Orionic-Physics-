@@ -18,20 +18,14 @@
         header {
             background-color: #00274d; /* Navy Blue */
             color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
+            text-align: center;
+            padding: 20px 0;
         }
 
         header h1 {
             margin: 0;
-            font-size: 1.8em;
-        }
-
-        header .time {
-            font-size: 1em;
-            font-style: italic;
+            font-size: 2em;
+            font-weight: 400;
         }
 
         /* Main Content Styles */
@@ -49,15 +43,36 @@
             margin-bottom: 10px;
         }
 
-        /* List of Theories */
-        .theories a, .blogs a {
+        /* Links Styling */
+        a {
             color: #00274d;
             text-decoration: none;
             font-weight: bold;
         }
 
-        .theories a:hover, .blogs a:hover {
+        a:hover {
             text-decoration: underline;
+        }
+
+        /* Contact Section */
+        .contact {
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+
+        .contact a {
+            display: inline-block;
+            padding: 10px;
+            color: #00274d;
+            background-color: #ffffff;
+            border: 1px solid #00274d;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            background-color: #00274d;
+            color: white;
         }
 
         /* Footer Styles */
@@ -70,13 +85,13 @@
             bottom: 0;
             width: 100%;
         }
+
     </style>
 </head>
 <body>
     <!-- Header -->
     <header>
         <h1>Orionic Physics</h1>
-        <div class="time">Houston Time: 2100 Hours</div>
     </header>
 
     <!-- Main Content -->
@@ -84,12 +99,12 @@
         <!-- Introduction Section -->
         <section>
             <h2>Welcome to Orionic Physics</h2>
-            <p>Discover the fascinating world of theoretical physics, explore groundbreaking theories, and delve into the mysteries of the universe. This platform is dedicated to exploring physics concepts, publishing papers, and sharing thought-provoking ideas.</p>
+            <p>Explore theoretical physics, cutting-edge ideas, and a fresh perspective on cosmic phenomena. Delve into fascinating theories and concepts that challenge our understanding of the universe.</p>
         </section>
 
         <!-- Theoretical Physics Section -->
-        <section class="theories">
-            <h2>Know About Theoretical Physics</h2>
+        <section>
+            <h2>Explore Physics Theories</h2>
             <ul>
                 <li><a href="https://en.wikipedia.org/wiki/Relativity_theory" target="_blank">Theory of Relativity</a></li>
                 <li><a href="https://en.wikipedia.org/wiki/Quantum_mechanics" target="_blank">Quantum Mechanics</a></li>
@@ -101,11 +116,19 @@
         </section>
 
         <!-- My Papers and Blogs Section -->
-        <section class="blogs">
+        <section>
             <h2>My Papers and Blogs</h2>
             <ul>
                 <li><a href="alpha.html" target="_blank">The Ultimate Fate of the Universe: Exploring Theories of Cosmic Death and Rebirth</a></li>
+                <li><a href="alpha_2.html" target="_blank">My take on creation of a new universe</a></li>
             </ul>
+            <p><strong>Date of Publication:</strong> December 2024</p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <a href="mailto:aryancouldbereal@gmail.com">📧 Email Us</a>
         </section>
     </main>
 
